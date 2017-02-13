@@ -5,45 +5,49 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  height: 400px;
 }
 .VegSlider ul{
   padding: 0;
   margin: 0;
 }
-.VegSlider ul li{
+.VegSlider > ul > li{
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
   border: 1px solid #CCC;
 }
-.VegSlider-img{
+.VegSlider > .VegSlider-img {
   background-color: #fff;
-
+  overflow: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
+  overflow: hidden;
   right: 0;
   text-align:center;
   font: 0/0 a;
 }
-.VegSlider-img .VegSlider-centerer {
+.VegSlider > .VegSlider-img > .VegSlider-centerer {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
-.VegSlider-img:before {
+.VegSlider > .VegSlider-img:before {
     content: ' ';
     display: block;
     vertical-align: middle;
 }
 
-.VegSlider-img img{
+.VegSlider-img > img{
   width: 100%;
   vertical-align: middle;
   display: inline-block;
+  margin-top: -25%;
+  transform: translateY(25%);	
 }
 .VegSlider-textos{
   color: #fff;
