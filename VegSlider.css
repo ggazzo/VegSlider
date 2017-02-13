@@ -1,0 +1,104 @@
+.VegSlider{
+  background-color: #FFF;
+  border: 1px solid #333;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.VegSlider ul{
+  padding: 0;
+  margin: 0;
+}
+.VegSlider ul li{
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #CCC;
+}
+.VegSlider-img{
+  background-color: #fff;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align:center;
+  font: 0/0 a;
+}
+.VegSlider-img .VegSlider-centerer {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.VegSlider-img:before {
+    content: ' ';
+    display: block;
+    vertical-align: middle;
+}
+
+.VegSlider-img img{
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.VegSlider-textos{
+  color: #fff;
+  background-color: rgba(0,0,0, 0.6);
+  text-align: left;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  z-index:100;
+  position:absolute;;
+  bottom: 0px;
+  left: 0;
+}
+.VegSlider-title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.VegSlider-desc{
+  font-size: 14px;
+  text-align: left;
+}
+/*ARROWS*/
+.VegSlider-nav-arrow{
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 48px;
+
+  margin-top: -24px;
+  top: 48%;
+}
+.VegSlider-nav-arrow-left{left: 8px;
+  background: url('./imagens/arrows-48-48-4.png') left top no-repeat;
+}
+.VegSlider-nav-arrow-right{right: 8px;
+background: url('./imagens/arrows-48-48-4.png') right top no-repeat;}
+
+/*INICIO TRANSITIONS*/
+/*https://tympanus.net/codrops/2013/04/17/background-slideshow/*/
+.VegSlider li{
+  opacity: 0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+
+.backgroundsize .VegSlider li {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.backgroundsize .VegSlider li img {
+	display: none;
+}
